@@ -1,0 +1,30 @@
+{% extends "mypage.html" %}
+
+{% block css %}
+<link rel="stylesheet" href="{{url_for('static', filename='/css/list.css')}}">
+{% endblock %}
+
+
+{% block content %}
+  <h1>検索結果</h1>
+  <table class="table table-striped">
+    <thead>
+        <tr>
+            <th>タイトル</th>
+            <th>著者</th>
+            <th>出版社</th>
+            <th>ページ数</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for book in books %}
+        <tr>
+            <td>{{ book[0] }}</td>
+            <td>{{ book[1] }}</td>
+            <td>{{ book[2] }}</td>
+            <td>{{ book[3] }}</td>
+        </tr>
+        {% endfor %}
+    </tbody>
+  </table>
+{% endblock %}

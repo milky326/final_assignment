@@ -1,0 +1,15 @@
+CREATE TABLE tosho_user(
+ id serial,
+ name varchar(64) not null unique,
+ password varchar(64) not null,
+ salt varchar(32) not null,
+	primary key(id));
+	
+
+CREATE TABLE book (
+  id SERIAL PRIMARY KEY,
+  title VARCHAR(64),
+  author VARCHAR(64),
+  publisher VARCHAR(64),
+  pages integer
+);

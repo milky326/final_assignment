@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+    {% extends "mypage.html" %}
+
+  {% block css %}
+  <link rel="stylesheet" href="{{url_for('static', filename='/css/book_register_exe.css')}}">
+  {% endblock %}
+
+  {% block content %}
+    <h1>登録</h1>
+    <form action="{{url_for('book_register_exe')}}" method="post">
+      タイトル：<input type="text" name="title"><br>
+      著者：<input type="text" name="author"><br>
+      出版社：<input type="text" name="publisher"><br>
+      ページ数:<input type= "number" name="pages"><br>
+      <button type="submit">登録</button>
+    </form>
+  {% endblock %}
+</body>
+</html>
