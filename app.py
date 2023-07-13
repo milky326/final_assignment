@@ -4,7 +4,8 @@ from datetime import timedelta
 #登録ログイン
 app = Flask(__name__)
 app.secret_key = ''.join(random.choices(string.ascii_letters,k=256))
-    
+   
+# test 
 @app.route('/', methods=['GET'])
 def index():
     msg = request.args.get('msg')
