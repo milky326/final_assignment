@@ -6,12 +6,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!--ファビコンの書き方-->
   <link rel="icon" href="{{url_for('static', filename='favicon/favicon.ico')}}">
-  <title>Document</title>
+  {% block css %}
+  <!-- CSS埋め込み -->
+  {% endblock %}
 </head>
 <body>
   <h2>【MorijyobiLibrary】</h2>
   
-  <h3>ログイン画面</h3>
+  <h3>ユーザーログイン画面</h3>
   {% if error != null %}
     <p style="color:red">{{error}}</p>
   {% endif %}
@@ -26,3 +28,6 @@
   <a href="{{url_for('register_form')}}">新規登録</a>
 </body>
 </html>
+{% block content %}
+  <!-- ここにメインコンテンツを埋め込む -->
+  {% endblock %}

@@ -5,7 +5,7 @@
 {% endblock %}
 
 {% block content %}
-  <h1>検索</h1>
+  <h1>図書検索</h1>
   <form action="{{url_for('book_select_search')}}" method="post">
 	  <input type="text" name="keyword" value="{{keyword}}">
 	  <input type="submit" value="検索"></button>
