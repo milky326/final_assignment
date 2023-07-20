@@ -10,7 +10,9 @@ body {
     font-family: "Yu Gothic Medium", "游ゴシック Medium",
         YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", sans-serif;
     line-height: 1.7;
-    color: #432;
+    color: rgb(7, 3, 0);
+    font-size: 1rem;
+    font-weight: bold;
     background-image: url("../images/kv-001.jpg");
     background-size: cover;
     background-repeat: no-repeat;
@@ -97,18 +99,35 @@ img {
 .button {
     font-size: 1.375rem;
     background: rgb(255, 196, 2);
-    color: #fff;
+    color: #000000;
     /* 角を丸める */
     border-radius: 10px;
     padding: 6px 12px;
-    
+    margin-top: 15px;
 }
-
-
+.button1 {
+    font-size: 1.375rem;
+    background: rgb(255, 255, 255);
+    color: #000000;
+    /* 角を丸める */
+    border-radius: 10px;
+    padding: 6px 12px;
+    margin-top: 15px;
+}
+.logout {
+    font-size: 1.375rem;
+    background: rgb(255, 255, 255);
+    color: #000000;
+    /* 角を丸める */
+    border-radius: 10px;
+    padding: 6px 12px;
+    margin-top: 50px;
+}
+    
 /* :hover はタグの上をカーソルが通ったときの設定 */
 
 .button:hover {
-    background: #0090aa;
+    background: #0cf504;
 }
 
 /* 大きな背景画像 */
@@ -131,3 +150,7 @@ img {
     text-transform: none;
 }
 
+table,th,td {
+    background-color: #fff;
+    border: 3px solid #000;
+}

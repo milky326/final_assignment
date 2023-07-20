@@ -15,7 +15,7 @@
   <header>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
       <div class="container-fluid">
-        <a>Mypage</a>
+        <a>図書管理メニュー</a>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div class="navbar-nav">
             <a class="nav-link" href="{{url_for('sample_list')}}">一覧</a>
@@ -28,11 +28,14 @@
     </nav>
   </header>
   <h2>マイページへようこそ</h2>
-  <a href="{{url_for('logout')}}">ログアウト</a>
 
   {% block content %}
   <!-- ここにメインコンテンツを埋め込む -->
   {% endblock %}
+
+  <form action="{{url_for('logout')}}">
+    <button type="submit"class="logout">ログアウト</button>
+  </form>
 
   <footer class="footer bg-light fixed-bottom">
   
