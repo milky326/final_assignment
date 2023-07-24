@@ -7,15 +7,12 @@ html {
 }
 
 body {
-    font-family: "Yu Gothic Medium", "游ゴシック Medium",
-        YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", sans-serif;
     line-height: 1.7;
-    color: rgb(7, 3, 0);
+    color: rgb(255, 255, 255);
     font-size: 1rem;
     font-weight: bold;
     background-image: url("../images/kv-001.jpg");
     background-size: cover;
-    background-repeat: no-repeat;
     text-align: center;
     margin-top: 85px;
 }
